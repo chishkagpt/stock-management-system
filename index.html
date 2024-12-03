@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>库存管理系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>在庫管理システム</h1>
+        <div class="form">
+            <input type="text" id="itemName" placeholder="名前">
+            <input type="number" id="itemQuantity" placeholder="数量">
+            <input type="text" id="itemLocation" placeholder="位置">
+            <button id="addItemButton">商品追加</button>
+        </div>
+        <h2>在庫管理表</h2>
+        <table id="inventoryTable">
+            <thead>
+                <tr>
+                    <th>名前</th>
+                    <th>数量</th>
+                    <th>位置</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 动态填充内容 -->
+            </tbody>
+        </table>
+        <div class="actions">
+            <button id="exportData">データエクスポート</button>
+            <input type="file" id="importData" accept="application/json" style="display: none;">
+            <label for="importData" class="button">データインポート</label>
+            <button id="clearData">データクリア</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
